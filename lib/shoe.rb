@@ -11,8 +11,9 @@ class Shoe
 
   def brand= (brand)
     @brand = brand
-    BRAND.find
-    BRAND << brand
+    if !BRAND.include (brand)
+      BRAND << brand
+    end
   end
 
   def cobble
