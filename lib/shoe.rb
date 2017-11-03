@@ -9,9 +9,9 @@ class Shoe
     BRAND << brand
   end
 
-
   def brand= (brand)
     @brand = brand
+    BRAND.find
     BRAND << brand
   end
 
